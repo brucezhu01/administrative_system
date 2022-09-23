@@ -8,11 +8,11 @@
       #searchText {
         height: 25px;
         width: 200px;
+        padding-left: 5px;
       }
 
       #searchText::placeholder {
         font-size: 15px;
-        padding-left: 5px;
       }
 
       #searchButton {
