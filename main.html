@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Student Management System - CS 101
+    </title>
+    <script src="js/jQuery.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/toolBar.css">
+    <link rel="stylesheet" href="styles/searchBar.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    
+    <style>
+      body {
+        font-family: Roboto;
+      }
+
+      .header {
+        background-color:rgb(20, 20, 121);
+        color: white;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header">Class Managment System - CS 101</div>
+    </header>
+    <main>
+      <section id="toolBar">
+        <div class="toolBarButtonsContainer">
+          <div>
+            <button class="toolBarButtons" id="addStudentButton">Add New Student
+              <div class="buttonTips">Toggle to Open/Cancel Add Bar</div>
+            </button>
+          </div>
+          <div>
+            <button class="toolBarButtons" id="addSearchButton">Search
+              <div class="buttonTips2">Toggle to Open/Close Search Bar</div>
+            </button>
+          </div>
+        </div>
+
+        <div id="searchBar">
+          <input type="text" id="searchText" placeholder="Enter a student name..." />
+          <button style="display:inline-block" id="searchButton">
+            <img style = "height: 20px;" src= "search.svg">
+          </button>
+        </div>
+        
+        <div id="addBar">
+          <input type="text" id="newStudentName" class="nameBox" placeholder="Enter Studente Name" />
+          <input type="date" id="newStudentDate" class="dateBox" />
+          <input type="text" id="newStudentId" class="idBox" placeholder="Enter Studente ID" />
+          <button onclick=onCreate() class="submitButton">Submit</button>
+        </div>
+
+        
+      </section>
+
+      <section class="table">
+        <div class="tableHeading">
+          <div class="heading"> Student Name</div>
+          <div class="heading"> Date Enrolled</div>
+          <div class="heading"> Student ID</div>
+        </div>
+
+        <div id="displaySection"></div>
+      </section>
+    </main>
+    
+    <script src="js/main.js"></script>
+  </body>
+</html>

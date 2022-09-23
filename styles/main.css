@@ -1,0 +1,72 @@
+.tableHeading {
+  display: flex;
+  background-color:rgb(20, 20, 121);
+  color: white;
+  padding: 10px;
+  position: relative;
+}
+
+.table {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.heading {
+  flex: 1;
+  font-weight: 500;
+}
+
+.mainInfo {
+  display: flex;
+  background-color:rgb(238, 238, 238);
+  font-size: 17px;
+  padding: 10px;
+  align-items: center;
+  border: solid;
+  border-width: 1px;
+  border-color: gray;
+  border-top: none;
+  position: relative;
+}
+
+.studentName,
+.studentDate,
+.studentID{
+  flex: 1;
+}
+
+.editDeleteButtonsContainer {
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+}
+
+.editDeleteButtons,
+.submitButton,
+#confirmButton {
+  margin-right: 10px;
+  background-color: rgb(20, 20, 121);
+  color: rgb(238, 238, 238);
+  border: none;
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editDeleteButtons:hover,
+.submitButton:hover,
+#confirmButton:hover {
+  box-shadow: 2px 2px 1px lightgray;
+}
+
+#newEditName {
+  width: 120px;
+  margin-right: 20px;
+}
+
+#newDate {
+  width: 120px;
+  margin-right: 20px;
+}
