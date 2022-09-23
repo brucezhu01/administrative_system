@@ -74,7 +74,6 @@ $('#searchButton').on("click", () => {
     }
   }); 
 
-  const alertArray = [];
   if (searchResult.length === 0) {
     alert("Name not found. Please follow the format: First Name + space + Last Name");
   } else {for (let i = 0; i < searchResult.length; i++) {
